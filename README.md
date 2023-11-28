@@ -3,7 +3,7 @@
 Le principe de mon prototype :
 -	On paramètre le schéma de GraphQL à partir d’entités POCO de notre base
 -	J’associe le système de requêtage de Hot Chocolate à la lecture des données avec jointures vers Entity Framework.
--	La base de données est automatiquement créée par container, générée puis remplie au premier appal.
+-	La base de données est automatiquement créée par container, générée puis remplie au premier appel.
 
 La stack technique de mon prototype :
 -	Hot Chocolate  13.7.0
