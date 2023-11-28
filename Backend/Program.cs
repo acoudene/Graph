@@ -1,3 +1,4 @@
+using Data.Tests;
 using HotChocolateDemo.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +12,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType<QueryPatients>();
+
+builder.Services
+  .AddSingleton<SqlServerDockerTest>(sp => new SqlServerDockerTest(new ConsoleTestOutputHelper()));
 
 var app = builder.Build();
 

@@ -167,7 +167,7 @@ public class SqlServerDockerTest : IAsyncLifetime
   /// Get settings for EF Context
   /// </summary>
   /// <returns></returns>
-  protected DbContextOptionsBuilder GetDbContextBuilder()
+  public DbContextOptionsBuilder GetDbContextBuilder()
   {
     var builder = new DbContextOptionsBuilder();
     builder

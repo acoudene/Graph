@@ -2,7 +2,7 @@
 
 namespace HotChocolateDemo.Queries;
 
-public class Query
+public class QueryBooks
 {
   public Book GetBook() =>
       new Book
