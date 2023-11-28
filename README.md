@@ -11,7 +11,7 @@ La stack technique de mon prototype :
 - EF Core 8
 - Une base SQL-Server :
   - Automatiquement embarquée dans un container Docker lancé par code
-  - La base est créée et remplit automatiquement à la première requête.
+  - La base est créée et remplie automatiquement à la première requête.
 
 L’exemple en images.
 
